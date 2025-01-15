@@ -32,6 +32,6 @@ repositories {
 }
 
 dependencies {
-    // LIbs
+    // Libs
     compileOnly("net.minestom:minestom-snapshots:$minestom_version")
 }
