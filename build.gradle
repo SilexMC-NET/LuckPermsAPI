@@ -6,7 +6,7 @@ plugins {
 base {
     group         =  "net.silexmc"
     version       =  "1.0.1"
-    archivesName  =  "MoneyAPI"
+    archivesName  =  "LuckPermsAPI"
 }
 
 java {
