@@ -29,9 +29,15 @@ publishing {
 repositories {
     // Maven
     mavenCentral()
+
+    // JitPack
+    maven {
+        name  =  "JitPack"
+        url   =  "https://jitpack.io"
+    }
 }
 
 dependencies {
     // Libs
-    compileOnly("net.minestom:minestom-snapshots:$minestom_version")
+    compileOnly("com.github.SilexMC-NET:MinestomAPI:$minestom_version")
 }

@@ -1,11 +1,19 @@
 package net.silexmc.minestom.luckperms.api;
 
 import net.kyori.adventure.text.Component;
+import net.minestom.server.entity.Player;
+import net.minestom.server.network.player.GameProfile;
+import net.minestom.server.network.player.PlayerConnection;
+import org.jetbrains.annotations.NotNull;
 
-public interface ILuckPermsPlayer {
-    boolean hasPermission(String permission);
+public abstract class ILuckPermsPlayer extends Player {
+    public ILuckPermsPlayer(@NotNull PlayerConnection connection, @NotNull GameProfile profile) {
+        super(connection, profile);
+    }
 
-    Component getPrefix();
+    public abstract boolean hasPermission(String permission);
 
-    Component getSuffix();
+    public abstract Component getPrefix();
+
+    public abstract Component getSuffix();
 }
