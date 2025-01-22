@@ -5,7 +5,7 @@ import net.kyori.adventure.text.Component;
 public interface ILuckPermsPlayer {
     boolean hasPermission(String permission);
 
-    Component getPrefix();
+    String getPrefix();
 
-    Component getSuffix();
+    String getSuffix();
 }

@@ -5,7 +5,7 @@ plugins {
 
 base {
     group         =  "net.silexmc"
-    version       =  "1.0.2"
+    version       =  "1.0.3"
     archivesName  =  "LuckPermsAPI"
 }
 
